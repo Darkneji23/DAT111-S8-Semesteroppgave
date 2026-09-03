@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #C09BD8;
+  --color-secondary: #E6E4Ce;
+  --color-background-primary: #EDE3E9;
+  --color-background-secondary: #9F84BD;
+  --color-text-primary: Black;
+  --color-text-secondary: White;
+}
+
 * {
   margin: 0;
   padding: 0;
