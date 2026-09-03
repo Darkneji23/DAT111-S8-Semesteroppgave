@@ -10,6 +10,5 @@ https://www.youtube.com/watch?v=4okmgMzPwZ8&list=PL4cUxeGkcC9j2pbmcA93DR1A3m7VEg
 # Design
 https://www.figma.com/design/Yzql7ziXTAyFGy4MoP5QZV/DAT111-Semesteroppgave-design?node-id=0-1&t=VIqTIXlk82fYt08F-1
 
-# Diskord:
-
+# Discord:
 https://discord.gg/SafdK7hYf
