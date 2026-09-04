@@ -14,8 +14,22 @@
 }
 
 body {
+  margin-top: 100px;
   background-color: var(--color-background-primary);
-  height: 5000px;
+}
+
+.container {
+  box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 5px solid var(--color-primary);
+  border-radius: 20px;
+  background-color: var(--color-background-secondary);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.container:hover {
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(+5px);
 }
 
 header {
@@ -184,6 +198,34 @@ header .hamburger-menu .menu ul a {
 
 .test-title > h1 {
   font-size: 200px;
+}
+
+.kontakt-oss-grid {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.kontakt-oss-grid .container {
+  flex: 1 1 calc(50% - 20px);
+  max-width: 500px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "image info"
+    "title info";
+}
+
+.profile-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .teodor-text {
