@@ -175,6 +175,11 @@ header .hamburger-menu .menu ul a {
   font-size: 20px;
 }
 
+#path-to-root {
+  display: none;
+  visibility: hidden;
+}
+
 .test-title {
   min-height: 100vh;
   display: flex;
@@ -187,9 +192,10 @@ header .hamburger-menu .menu ul a {
 }
 
 .teodor-text {
-    color: var(--color-primary);
-    transition: color 0.2s, font-size 1s;
-  }
+  color: var(--color-primary);
+  transition: color 0.2s, font-size 1s;
+}
+
 .teodor-text:hover {
   color: var(--color-secondary);
   font-size: 250px;
