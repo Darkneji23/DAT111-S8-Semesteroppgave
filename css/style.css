@@ -185,3 +185,12 @@ header .hamburger-menu .menu ul a {
 .test-title>h1 {
   font-size: 200px;
 }
+
+.teodor-text {
+    color: var(--color-primary);
+    transition: color 0.2s, font-size 1s;
+  }
+.teodor-text:hover {
+  color: var(--color-secondary);
+  font-size: 250px;
+}
