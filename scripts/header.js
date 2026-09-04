@@ -1,3 +1,4 @@
+const hamburgerMenuContainer = document.getElementById("hamburger-menu-container");
 const hamburgerMenuBtn = document.getElementById("hamburger-menu-btn");
 const hamburgerMenuBg = document.getElementById("hamburger-menu-bg");
 
@@ -6,13 +7,13 @@ hamburgerMenuBtn.addEventListener("click", (e) => {
 });
 
 hamburgerMenuBg.addEventListener("click", (e) => {
-    e.target.parentElement.classList.remove("open")
+    hamburgerMenuContainer.classList.remove("open")
 });
 
-function ToggleHamburgerMenu(menu){
-    if(menu.classList.contains("open")){
-        menu.classList.remove("open")
+function ToggleHamburgerMenu(){
+    if(hamburgerMenuContainer.classList.contains("open")){
+        hamburgerMenuContainer.classList.remove("open")
     }else{
-        menu.classList.add("open")
+        hamburgerMenuContainer.classList.add("open")
     }
 }
