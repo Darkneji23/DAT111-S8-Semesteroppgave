@@ -1,7 +1,7 @@
 //List of links shown directly on the header
 const headerLinks = [
     { href: "", text: "Hjem" },
-    { href: "", text: "Om-oss" },
+    { href: "./pages/om-bib.html", text: "Om-oss" },
     // { href: "", text: "Oppusing" },
     // { href: "", text: "Utvendig" },
 ];
@@ -9,8 +9,8 @@ const headerLinks = [
 //List of links added to the hamburger menu
 const menuLinks = [
     { href: "", text: "Hjem" },
-    { href: "", text: "Om-oss" },
-    { href: "", text: "Kontakt-oss" },
+    { href: "./pages/om-bib.html", text: "Om-oss" },
+    { href: "./pages/Kontakt-oss.html", text: "Kontakt-oss" },
     // { href: "", text: "Oppusing" },
     // { href: "", text: "Utvendig" },
 ];
