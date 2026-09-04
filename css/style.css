@@ -95,7 +95,7 @@ header .header-content .hamburger-menu .hamburger-icon>div {
   height: 5px;
   border-radius: 5px;
   background-color: var(--color-text-secondary);
-  transition: transform 0.3s ease-in-out, background-color 0.15s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 header .header-content .hamburger-menu .hamburger-icon>div:nth-child(1) {
