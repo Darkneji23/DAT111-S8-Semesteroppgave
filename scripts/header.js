@@ -1,7 +1,9 @@
+const pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
+
 //List of links shown directly on the header
 const headerLinks = [
-    { href: "", text: "Hjem" },
-    { href: "./pages/om-bib.html", text: "Om-oss" },
+    { href: "index.html", text: "Hjem" },
+    { href: "pages/om-bib.html", text: "Om-oss" },
     // { href: "", text: "Oppusing" },
     // { href: "", text: "Utvendig" },
 ];
@@ -9,8 +11,8 @@ const headerLinks = [
 //List of links added to the hamburger menu
 const menuLinks = [
     { href: "", text: "Hjem" },
-    { href: "./pages/om-bib.html", text: "Om-oss" },
-    { href: "./pages/Kontakt-oss.html", text: "Kontakt-oss" },
+    { href: "pages/om-bib.html", text: "Om-oss" },
+    { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
     // { href: "", text: "Oppusing" },
     // { href: "", text: "Utvendig" },
 ];
@@ -18,14 +20,14 @@ const menuLinks = [
 //Creates logo element
 const logo = document.createElement("img");
 logo.classList.add("logo");
-logo.src = "./images/logo.png";
+logo.src = pathToRoot + "images/logo.png";
 
 //Creates nav element with links directly on the header
 const nav = document.createElement("nav");
 headerLinks.forEach(link => {
     const el = document.createElement("a");
     el.append(link.text);
-    el.href = link.href;
+    el.href = pathToRoot + link.href;
     nav.appendChild(el);
 });
 
@@ -46,7 +48,7 @@ menu.appendChild(menuList);
 menuLinks.forEach(link => {
     const a = document.createElement("a");
     a.append(link.text);
-    a.href = link.href;
+    a.href = pathToRoot + link.href;
     const li = document.createElement("li");
     li.appendChild(a);
     menuList.appendChild(li);
