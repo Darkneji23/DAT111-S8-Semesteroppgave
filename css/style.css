@@ -5,6 +5,7 @@
   --color-background-secondary: #9f84bd;
   --color-text-primary: Black;
   --color-text-secondary: White;
+  --header-height: 100px;
 }
 
 * {
@@ -24,7 +25,9 @@ body {
   border: 5px solid var(--color-primary);
   border-radius: 20px;
   background-color: var(--color-background-secondary);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .container:hover {
@@ -33,7 +36,6 @@ body {
 }
 
 header {
-  --header-height: 100px;
   position: fixed;
   top: 0;
   left: 0;
@@ -221,7 +223,7 @@ header .hamburger-menu .menu ul a {
     "title info";
 }
 
-.profile-image{
+.profile-image {
   width: 200px;
   height: 200px;
   border-radius: 15px;
@@ -243,7 +245,7 @@ header .hamburger-menu .menu ul a {
   z-index: -1000;
   background-image: url("../images/hero.jpg");
   background-size: cover;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,5 +260,25 @@ header .hamburger-menu .menu ul a {
 .hero > img {
   z-index: 2;
   width: 80%;
+  max-height: calc(100vh - var(--header-height));
   height: auto;
+  object-fit: contain;
+  animation-name: logoAppear;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  @media (max-width: 900px) {
+    transform: translateY(-50%);
+  }
+}
+@keyframes logoAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

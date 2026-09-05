@@ -2,19 +2,19 @@ const pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 
 //List of links shown directly on the header
 const headerLinks = [
-    { href: "index.html", text: "Hjem" },
-    { href: "pages/om-bib.html", text: "Om-oss" },
-    // { href: "", text: "Oppusing" },
-    // { href: "", text: "Utvendig" },
+  { href: "index.html", text: "Hjem" },
+  { href: "pages/om-bib.html", text: "Om-oss" },
+  // { href: "", text: "Oppusing" },
+  // { href: "", text: "Utvendig" },
 ];
 
 //List of links added to the hamburger menu
 const menuLinks = [
-    { href: "", text: "Hjem" },
-    { href: "pages/om-bib.html", text: "Om-oss" },
-    { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
-    // { href: "", text: "Oppusing" },
-    // { href: "", text: "Utvendig" },
+  { href: "", text: "Hjem" },
+  { href: "pages/om-bib.html", text: "Om-oss" },
+  { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
+  // { href: "", text: "Oppusing" },
+  // { href: "", text: "Utvendig" },
 ];
 
 //Creates logo element
@@ -24,11 +24,11 @@ logo.src = pathToRoot + "images/logo.png";
 
 //Creates nav element with links directly on the header
 const nav = document.createElement("nav");
-headerLinks.forEach(link => {
-    const el = document.createElement("a");
-    el.append(link.text);
-    el.href = pathToRoot + link.href;
-    nav.appendChild(el);
+headerLinks.forEach((link) => {
+  const el = document.createElement("a");
+  el.append(link.text);
+  el.href = pathToRoot + link.href;
+  nav.appendChild(el);
 });
 
 //Creates the hamburger menu button
@@ -45,13 +45,13 @@ const menu = document.createElement("div");
 menu.classList.add("menu");
 const menuList = document.createElement("ul");
 menu.appendChild(menuList);
-menuLinks.forEach(link => {
-    const a = document.createElement("a");
-    a.append(link.text);
-    a.href = pathToRoot + link.href;
-    const li = document.createElement("li");
-    li.appendChild(a);
-    menuList.appendChild(li);
+menuLinks.forEach((link) => {
+  const a = document.createElement("a");
+  a.append(link.text);
+  a.href = pathToRoot + link.href;
+  const li = document.createElement("li");
+  li.appendChild(a);
+  menuList.appendChild(li);
 });
 
 const hamburgerMenuContainer = document.createElement("div");
@@ -68,7 +68,7 @@ headerContent.appendChild(nav);
 headerContent.appendChild(hamburgerMenuContainer);
 
 const header = document.createElement("header");
-header.appendChild(headerContent)
+header.appendChild(headerContent);
 
 //Ads header to the body
 const body = document.querySelector("body");
@@ -76,17 +76,17 @@ body.insertBefore(header, body.firstChild);
 
 //Adds eventlistneres listening for clicks
 hamburgerMenuBtn.addEventListener("click", (e) => {
-    ToggleHamburgerMenu(e.target.parentElement)
+  ToggleHamburgerMenu(e.target.parentElement);
 });
 
 hamburgerMenuBg.addEventListener("click", (e) => {
-    hamburgerMenuContainer.classList.remove("open")
+  hamburgerMenuContainer.classList.remove("open");
 });
 
 function ToggleHamburgerMenu() {
-    if (hamburgerMenuContainer.classList.contains("open")) {
-        hamburgerMenuContainer.classList.remove("open")
-    } else {
-        hamburgerMenuContainer.classList.add("open")
-    }
+  if (hamburgerMenuContainer.classList.contains("open")) {
+    hamburgerMenuContainer.classList.remove("open");
+  } else {
+    hamburgerMenuContainer.classList.add("open");
+  }
 }
