@@ -251,7 +251,7 @@ header .hamburger-menu .menu ul a {
 .hero {
   position: relative;
   z-index: -1000;
-  background-image: url("../images/hero.jpg");
+  background-image: url("../images/hero.jpeg");
   background-size: cover;
   min-height: calc(100vh - var(--header-height));
   display: flex;
