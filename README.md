@@ -12,3 +12,6 @@ https://www.figma.com/design/Yzql7ziXTAyFGy4MoP5QZV/DAT111-Semesteroppgave-desig
 
 # Discord:
 https://discord.gg/SafdK7hYf
+
+# Idé-docs:
+https://docs.google.com/document/d/1Lf5OArxIFjyYDL3jbiNpJbnImL9zgtcoft0s0MwiGbA/edit?usp=sharing
