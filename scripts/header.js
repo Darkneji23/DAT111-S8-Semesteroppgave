@@ -1,4 +1,4 @@
-const pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
+let pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 
 //List of links shown directly on the header
 const headerLinks = [
@@ -18,12 +18,12 @@ const menuLinks = [
 ];
 
 //Creates logo element
-const logo = document.createElement("img");
+let logo = document.createElement("img");
 logo.classList.add("logo");
 logo.src = pathToRoot + "images/logo.png";
 
 //Creates nav element with links directly on the header
-const nav = document.createElement("nav");
+let nav = document.createElement("nav");
 headerLinks.forEach((link) => {
   const el = document.createElement("a");
   el.append(link.text);

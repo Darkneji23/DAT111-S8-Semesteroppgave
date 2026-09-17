@@ -392,3 +392,33 @@ h1 {
   padding: 32px;
   font-size: 64px;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-secondary);
+  padding: 32px;
+}
+
+footer>nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1080px;
+  gap: 16px;
+}
+
+footer>nav>div>ul {
+  list-style: none;
+}
+
+footer>nav>div>h2{
+  font-size: 16px;
+}
+
+footer>nav>div>ul>li>a {
+  color: var(--color-text-secondary);
+}
