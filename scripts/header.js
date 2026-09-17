@@ -13,7 +13,7 @@ const menuLinks = [
   { href: "", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
-  // { href: "", text: "Oppusing" },
+  { href: "pages/oppussing.html", text: "Oppussing" },
   // { href: "", text: "Utvendig" },
 ];
 
