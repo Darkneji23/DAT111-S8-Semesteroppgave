@@ -14,7 +14,7 @@ const menuLinks = [
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
   { href: "pages/oppussing.html", text: "Oppussing" },
-  // { href: "", text: "Utvendig" },
+  { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
 //Creates logo element
