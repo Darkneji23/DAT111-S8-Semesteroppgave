@@ -267,7 +267,7 @@ header .hamburger-menu .menu ul a {
   opacity: 0.4;
 }
 
-.hero>h1{
+.hero>h1 {
   z-index: 2;
   width: 80%;
 
@@ -300,7 +300,7 @@ header .hamburger-menu .menu ul a {
   }
 }
 
-.page-content{
+.page-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -310,7 +310,7 @@ header .hamburger-menu .menu ul a {
   gap: 64px;
 }
 
-.page-content>section{
+.page-content>section {
   width: 100%;
   max-width: 1080px;
   display: flex;
@@ -319,19 +319,19 @@ header .hamburger-menu .menu ul a {
   gap: 32px;
 }
 
-.page-content>section>.section-heading{
+.page-content>section>.section-heading {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.reviews{
+.reviews {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
 
-.reviews>.review{
+.reviews>.review {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -341,21 +341,54 @@ header .hamburger-menu .menu ul a {
   border: solid black 1px;
 }
 
-.reviews>.review>div{
+.reviews>.review>div {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
 
-.reviews>.review>div>div{
+.reviews>.review>div>div {
   display: flex;
   flex-direction: column;
 }
 
-.reviews>.review .avatar{
+.reviews>.review .avatar {
   width: 50px;
   height: 50px;
   object-fit: cover;
-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.adresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  align-items: left;
+}
+
+.adresses-list>address {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: fit-content;
+  gap: 8px;
+  border: 1px solid black;
+  padding: 8px;
+  flex-grow: 1;
+  min-width: 500px;
+  border-radius: 8px;
+}
+
+.adresses-list>address>img {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 32px;
+  font-size: 64px;
 }
