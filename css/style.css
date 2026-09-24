@@ -367,7 +367,12 @@ header .hamburger-menu .menu ul a {
   align-items: left;
 }
 
-.adresses-list > address {
+.adresses-list > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.adresses-list > a > address {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -380,7 +385,7 @@ header .hamburger-menu .menu ul a {
   border-radius: 8px;
 }
 
-.adresses-list > address > img {
+.adresses-list > a > address > img {
   width: 150px;
   height: auto;
 }
