@@ -1,4 +1,4 @@
-const pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
+let pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 
 //List of links shown directly on the header
 const headerLinks = [
@@ -13,17 +13,17 @@ const menuLinks = [
   { href: "", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
-  // { href: "", text: "Oppusing" },
-  // { href: "", text: "Utvendig" },
+  { href: "pages/oppussing.html", text: "Oppussing" },
+  { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
 //Creates logo element
-const logo = document.createElement("img");
+let logo = document.createElement("img");
 logo.classList.add("logo");
 logo.src = pathToRoot + "images/logo.png";
 
 //Creates nav element with links directly on the header
-const nav = document.createElement("nav");
+let nav = document.createElement("nav");
 headerLinks.forEach((link) => {
   const el = document.createElement("a");
   el.append(link.text);
