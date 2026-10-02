@@ -5,7 +5,7 @@ const headerLinks = [
   { href: "index.html", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
-  { href: "pages/opussing.html", text: "Oppusing" },
+  { href: "pages/oppussing.html", text: "Oppusing" },
   { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
@@ -14,7 +14,7 @@ const menuLinks = [
   { href: "index.html", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
-  { href: "pages/opussing.html", text: "Oppusing" },
+  { href: "pages/oppussing.html", text: "Oppusing" },
   { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
