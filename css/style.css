@@ -248,6 +248,45 @@ header .hamburger-menu .menu ul a {
   font-size: 250px;
 }
 
+.teodor-title {
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teodor-title>h1 {
+  font-size: 200px;
+  margin-top: 50px;
+}
+
+.teodor-undertekst {
+  font-size: 40px;
+}
+
+.teodor-bil {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 60px;
+  background-color: red;
+}
+
+.teodor-bil:hover {
+  animation-name: teodorKjore;
+  animation-duration: 4s;
+}
+
+@keyframes teodorKjore {
+  from{
+    left: 0px;
+  }
+  to{
+    left: 100%;
+  }
+}
+
 .hero {
   position: relative;
   z-index: -1000;
