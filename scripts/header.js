@@ -4,6 +4,7 @@ let pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 const headerLinks = [
   { href: "index.html", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
+  { href: "pages/konsultasjon.html", text: "Gratis konsultasjon" },
   // { href: "", text: "Oppusing" },
   // { href: "", text: "Utvendig" },
 ];
