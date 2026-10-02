@@ -6,7 +6,7 @@ const headerLinks = [
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
   { href: "pages/opussing.html", text: "Oppusing" },
-  { href: "pages/utvindig.html", text: "Utvendig" },
+  { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
 //List of links added to the hamburger menu
@@ -15,7 +15,7 @@ const menuLinks = [
   { href: "pages/om-bib.html", text: "Om-oss" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
   { href: "pages/opussing.html", text: "Oppusing" },
-  { href: "pages/utvindig.html", text: "Utvendig" },
+  { href: "pages/utvendig.html", text: "Utvendig" },
 ];
 
 //Creates logo element
