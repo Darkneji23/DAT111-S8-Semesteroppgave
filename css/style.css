@@ -255,7 +255,7 @@ header .hamburger-menu .menu ul a {
   align-items: center;
 }
 
-.teodor-title>h1 {
+.teodor-title > h1 {
   font-size: 200px;
   margin-top: 50px;
 }
@@ -279,10 +279,10 @@ header .hamburger-menu .menu ul a {
 }
 
 @keyframes teodorKjore {
-  from{
+  from {
     left: 0px;
   }
-  to{
+  to {
     left: 100%;
   }
 }
