@@ -4,18 +4,18 @@ let pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 const headerLinks = [
   { href: "index.html", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
-  { href: "pages/konsultasjon.html", text: "Gratis konsultasjon" },
-  // { href: "", text: "Oppusing" },
-  // { href: "", text: "Utvendig" },
+  { href: "pages/konsultasjon.html", text: "Konsultasjon" },
+  { href: "pages/opussing.html", text: "Oppusing" },
+  { href: "pages/utvindig.html", text: "Utvendig" },
 ];
 
 //List of links added to the hamburger menu
 const menuLinks = [
-  { href: "", text: "Hjem" },
+  { href: "index.html", text: "Hjem" },
   { href: "pages/om-bib.html", text: "Om-oss" },
-  { href: "pages/Kontakt-oss.html", text: "Kontakt-oss" },
-  { href: "pages/oppussing.html", text: "Oppussing" },
-  { href: "pages/utvendig.html", text: "Utvendig" },
+  { href: "pages/konsultasjon.html", text: "Konsultasjon" },
+  { href: "pages/opussing.html", text: "Oppusing" },
+  { href: "pages/utvindig.html", text: "Utvendig" },
 ];
 
 //Creates logo element
