@@ -1,3 +1,5 @@
+/* ===================== VARIABLES and RESET ===================== */
+
 :root {
   --color-primary: #c09bd8;
   --color-secondary: #e6e4ce;
@@ -14,10 +16,160 @@
   box-sizing: border-box;
 }
 
+#path-to-root {
+  display: none;
+  visibility: hidden;
+}
+
 body {
-  margin-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--header-height);
   background-color: var(--color-background-primary);
 }
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 32px;
+  font-size: 64px;
+}
+
+.page-content {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  gap: 64px;
+}
+
+/* ===================== HOME PAGE (INDEX) ===================== */
+
+.hero {
+  position: relative;
+  z-index: -1000;
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  opacity: 0.4;
+}
+
+.hero__title {
+  z-index: 2;
+  width: 80%;
+}
+
+.hero__logo {
+  width: 100%;
+  max-height: calc(100vh - var(--header-height));
+  height: auto;
+  object-fit: contain;
+  animation-name: logoAppear;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.about-summary {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  border-radius: 8px;
+  padding: 8px;
+  border: solid black 1px;
+}
+
+.review__author {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.review__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* ===================== ABOUT BIB ===================== */
+
+.adresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  align-items: left;
+}
+
+.adresses-list > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.adresses-list > a > address {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: fit-content;
+  gap: 8px;
+  border: 1px solid black;
+  padding: 8px;
+  flex-grow: 1;
+  min-width: 500px;
+  border-radius: 8px;
+}
+
+.adresses-list > a > address > img {
+  width: 150px;
+  height: auto;
+}
+
+/* ===================== CONTACT US ===================== */
 
 .container {
   box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
@@ -34,6 +186,36 @@ body {
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
   transform: translateY(+5px);
 }
+
+.kontakt-oss-grid {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.kontakt-oss-grid .container {
+  flex: 1 1 calc(50% - 20px);
+  max-width: 500px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "image info"
+    "title info";
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* ===================== HEADER ===================== */
 
 header {
   position: fixed;
@@ -192,210 +374,7 @@ header .hamburger-menu .menu ul a {
   font-size: 20px;
 }
 
-#path-to-root {
-  display: none;
-  visibility: hidden;
-}
-
-.test-title {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.test-title > h1 {
-  font-size: 200px;
-}
-
-.kontakt-oss-grid {
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.kontakt-oss-grid .container {
-  flex: 1 1 calc(50% - 20px);
-  max-width: 500px;
-  min-width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-template-areas:
-    "image info"
-    "title info";
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-  object-fit: cover;
-}
-
-.teodor-text {
-  color: var(--color-primary);
-  transition:
-    color 0.2s,
-    font-size 1s;
-}
-
-.teodor-text:hover {
-  color: var(--color-secondary);
-  font-size: 250px;
-}
-
-.hero {
-  position: relative;
-  z-index: -1000;
-  background-image: url("../images/hero.jpeg");
-  background-size: cover;
-  height: calc(100vh - var(--header-height));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--color-primary);
-  opacity: 0.4;
-}
-
-.hero > h1 {
-  z-index: 2;
-  width: 80%;
-}
-
-.hero > h1 > img {
-  width: 100%;
-  max-height: calc(100vh - var(--header-height));
-  height: auto;
-  object-fit: contain;
-  animation-name: logoAppear;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-
-  @media (max-width: 900px) {
-    transform: translateY(-50%);
-  }
-}
-
-@keyframes logoAppear {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.page-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  gap: 64px;
-}
-
-.page-content > section {
-  width: 100%;
-  max-width: 1080px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-}
-
-.page-content > section > .section-heading {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.reviews {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-.reviews > .review {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 200px;
-  border-radius: 8px;
-  padding: 8px;
-  border: solid black 1px;
-}
-
-.reviews > .review > div {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-}
-
-.reviews > .review > div > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.reviews > .review .avatar {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 25px;
-}
-
-.adresses-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  align-items: left;
-}
-
-.adresses-list > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.adresses-list > a > address {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  width: fit-content;
-  gap: 8px;
-  border: 1px solid black;
-  padding: 8px;
-  flex-grow: 1;
-  min-width: 500px;
-  border-radius: 8px;
-}
-
-.adresses-list > a > address > img {
-  width: 150px;
-  height: auto;
-}
-
-h1 {
-  width: 100%;
-  text-align: center;
-  padding: 32px;
-  font-size: 64px;
-}
+/* ===================== FOOTER ===================== */
 
 footer {
   width: 100%;
@@ -426,4 +405,48 @@ footer > nav > div > h2 {
 
 footer > nav > div > ul > li > a {
   color: var(--color-text-secondary);
+}
+
+/* ===================== Animations ===================== */
+
+@keyframes logoAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===================== Media Queries ===================== */
+
+@media (max-width: 900px) {
+  .hero__logo {
+    transform: translateY(-50%);
+  }
+}
+
+/* ===================== PERSONAL PAGES and PROFILES ===================== */
+.teodor-title {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teodor-title > h1 {
+  font-size: 200px;
+}
+
+.teodor-text {
+  color: var(--color-primary);
+  transition:
+    color 0.2s,
+    font-size 1s;
+}
+
+.teodor-text:hover {
+  color: var(--color-secondary);
+  font-size: 250px;
 }
