@@ -43,7 +43,7 @@ function AddFooterToDOM() {
     footerLinkList.links.forEach((link) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.href = pathToRoot + link.url;
+      a.href = pathToRoot + link.href;
       a.innerText = link.text;
       li.appendChild(a);
       ul.appendChild(li);
