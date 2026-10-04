@@ -44,9 +44,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  gap: 64px;
+  padding: 32px 0;
 }
 .page-content__section {
   width: 100%;
@@ -182,6 +180,7 @@ h1 {
   flex-wrap: wrap;
   gap: 50px;
   width: 100%;
+  padding: 32px 0;
 }
 .contact-card {
   flex: 1 1 calc(50% - 20px);
@@ -225,6 +224,103 @@ h1 {
 .contact-card__bio {
   grid-area: info;
   padding: 10px;
+}
+
+/* ===================== Utvendig ===================== */
+
+.content-block {
+  margin-bottom: 36px;
+}
+
+.content-block__title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.content-block__text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.info-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list__item {
+  line-height: 1.5;
+}
+
+.info-list__label {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: var(--color-background-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.price-table__header {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 18px;
+}
+
+.price-table__cell {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.price-table__row:last-child .price-table__cell {
+  border-bottom: none;
+}
+
+.price-table__row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.price-table__cell:nth-child(1),
+.price-table__header:nth-child(1) {
+  text-align: left;
+}
+.price-table__cell:nth-child(2),
+.price-table__header:nth-child(2) {
+  text-align: center;
+}
+.price-table__cell:nth-child(3),
+.price-table__header:nth-child(3) {
+  text-align: right;
+}
+.supplier-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.supplier-list__item {
+  line-height: 1.5;
+}
+
+.supplier-list__link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.supplier-list__link:hover {
+  opacity: 0.75;
 }
 
 /* ===================== HEADER ===================== */
