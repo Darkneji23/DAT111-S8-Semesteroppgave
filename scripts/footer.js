@@ -22,24 +22,27 @@ function AddFooterToDOM() {
     {
       title: "lovlig",
       links: [
-        { url: "", text: "Personversnerklering" },
-        { url: "", text: "Informasjonskapsler" },
+        { href: "", text: "Personversnerklering" },
+        { href: "", text: "Informasjonskapsler" },
       ],
     },
   ];
 
   let body = document.querySelector("body");
   let footer = document.createElement("footer");
+  footer.classList.add("footer");
   let nav = document.createElement("nav");
-
+  nav.classList.add("footer__nav");
   footerLinkLists.forEach((footerLinkList) => {
     const div = document.createElement("div");
+    div.classList.add("footer__column");
     div.className = "footer-link-list";
     const h2 = document.createElement("h2");
+    h2.classList.add("footer__title");
     h2.innerText = footerLinkList.title;
     div.appendChild(h2);
-
     const ul = document.createElement("ul");
+    ul.classList.add("footer__list");
     footerLinkList.links.forEach((link) => {
       const li = document.createElement("li");
       const a = document.createElement("a");

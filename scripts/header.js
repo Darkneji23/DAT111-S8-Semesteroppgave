@@ -22,11 +22,12 @@ const menuLinks = [
 
 //Creates logo element
 let logo = document.createElement("img");
-logo.classList.add("logo");
+logo.classList.add("header__logo");
 logo.src = pathToRoot + "images/logo.png";
 
 //Creates nav element with links directly on the header
 let nav = document.createElement("nav");
+nav.classList.add("header__nav");
 headerLinks.forEach((link) => {
   const el = document.createElement("a");
   el.append(link.text);
@@ -36,18 +37,22 @@ headerLinks.forEach((link) => {
 
 //Creates the hamburger menu button
 const hamburgerMenuBtn = document.createElement("button");
-hamburgerMenuBtn.classList.add("hamburger-icon");
+hamburgerMenuBtn.classList.add("header__hamburger-btn");
 hamburgerMenuBtn.appendChild(document.createElement("div"));
 hamburgerMenuBtn.appendChild(document.createElement("div"));
 hamburgerMenuBtn.appendChild(document.createElement("div"));
 
 //Creates the hamburger menu that opens
 const hamburgerMenuBg = document.createElement("div");
-hamburgerMenuBg.classList.add("menu-background");
+hamburgerMenuBg.classList.add("header__overlay");
+
 const menu = document.createElement("div");
-menu.classList.add("menu");
+menu.classList.add("header__menu");
+
 const menuList = document.createElement("ul");
+menuList.classList.add("header__menu-list");
 menu.appendChild(menuList);
+
 menuLinks.forEach((link) => {
   const a = document.createElement("a");
   a.append(link.text);
@@ -58,19 +63,20 @@ menuLinks.forEach((link) => {
 });
 
 const hamburgerMenuContainer = document.createElement("div");
-hamburgerMenuContainer.classList.add("hamburger-menu");
+hamburgerMenuContainer.classList.add("header__hamburger");
 hamburgerMenuContainer.appendChild(hamburgerMenuBtn);
 hamburgerMenuContainer.appendChild(hamburgerMenuBg);
 hamburgerMenuContainer.appendChild(menu);
 
 //Creates and adds elements to the header itself
 const headerContent = document.createElement("div");
-headerContent.classList.add("header-content");
+headerContent.classList.add("header__content");
 headerContent.appendChild(logo);
 headerContent.appendChild(nav);
 headerContent.appendChild(hamburgerMenuContainer);
 
 const header = document.createElement("header");
+header.classList.add("header");
 header.appendChild(headerContent);
 
 //Ads header to the body
@@ -78,18 +84,14 @@ const body = document.querySelector("body");
 body.insertBefore(header, body.firstChild);
 
 //Adds eventlistneres listening for clicks
-hamburgerMenuBtn.addEventListener("click", (e) => {
-  ToggleHamburgerMenu(e.target.parentElement);
+hamburgerMenuBtn.addEventListener("click", () => {
+  ToggleHamburgerMenu();
 });
 
-hamburgerMenuBg.addEventListener("click", (e) => {
-  hamburgerMenuContainer.classList.remove("open");
+hamburgerMenuBg.addEventListener("click", () => {
+  hamburgerMenuContainer.classList.remove("header__hamburger--open");
 });
 
 function ToggleHamburgerMenu() {
-  if (hamburgerMenuContainer.classList.contains("open")) {
-    hamburgerMenuContainer.classList.remove("open");
-  } else {
-    hamburgerMenuContainer.classList.add("open");
-  }
+  hamburgerMenuContainer.classList.toggle("header__hamburger--open");
 }
