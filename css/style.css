@@ -267,7 +267,7 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.price-table__header {
+.price-table thead th {
   background-color: var(--color-primary);
   color: #ffffff;
   font-weight: 600;
@@ -275,31 +275,48 @@ h1 {
   padding: 14px 18px;
 }
 
-.price-table__cell {
+.price-table tbody td {
   padding: 14px 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   text-align: left;
 }
 
-.price-table__row:last-child .price-table__cell {
+.price-table tr:last-child td {
   border-bottom: none;
 }
 
-.price-table__row:nth-child(even) {
+.price-table tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.03);
 }
-.price-table__cell:nth-child(1),
-.price-table__header:nth-child(1) {
+.price-table td:nth-child(1),
+.price-table th:nth-child(1) {
   text-align: left;
 }
-.price-table__cell:nth-child(2),
-.price-table__header:nth-child(2) {
+.price-table td:nth-child(2),
+.price-table th:nth-child(2) {
   text-align: center;
 }
-.price-table__cell:nth-child(3),
-.price-table__header:nth-child(3) {
+.price-table td:nth-child(3),
+.price-table th:nth-child(3) {
   text-align: right;
 }
+.info-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list li {
+  line-height: 1.5;
+}
+
+.info-list strong {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
 .supplier-list {
   list-style: none;
   padding: 0;
@@ -308,18 +325,18 @@ h1 {
   gap: 12px;
 }
 
-.supplier-list__item {
+.supplier-list li {
   line-height: 1.5;
 }
 
-.supplier-list__link {
+.supplier-list a {
   color: var(--color-primary);
   font-weight: 600;
   text-decoration: underline;
   transition: opacity 0.2s ease;
 }
 
-.supplier-list__link:hover {
+.supplier-list a:hover {
   opacity: 0.75;
 }
 
