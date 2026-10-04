@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="nb">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Docume</title>
+    <title>Om BIB - Bolig i Bergen</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <h1>Om BIB</h1>
-    <div class="page-content">
-      <section>
+    <main class="page-content">
+      <section class="page-content__section">
         <div class="section-heading">
-          <h2>Om oss</h2>
-          <p>
+          <h2 class="section-heading__title">Om oss</h2>
+          <p class="section-heading__text">
             BIB har drevet med oppussing og vedlikehold av boliger i Bergensområdet i over 15 år. Vi
             er et lokalt håndverkerfirma med erfarne fagfolk innen bad, kjøkken, elektro og utvendig
             vedlikehold, og jobber for at hvert prosjekt skal bli levert med høy kvalitet og til
@@ -21,42 +21,42 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="page-content__section">
         <div class="section-heading">
-          <h2>Hvor finner du oss?</h2>
-          <p>Se våre kontorer nedenfor</p>
+          <h2 class="section-heading__title">Hvor finner du oss?</h2>
+          <p class="section-heading__text">Se våre kontorer nedenfor</p>
         </div>
-        <div class="adresses-list">
-          <a href="https://maps.app.goo.gl/tESfrYGrRzygZLH98">
-            <address>
-              <div>
-                <h3>Torgallmenningen</h3>
-                <span>Torgallmenningen 11, 5014 Bergen</span>
+        <div class="office-list">
+          <a class="office-card" href="https://maps.app.goo.gl/tESfrYGrRzygZLH98">
+            <address class="office-card__content">
+              <div class="office-card__info">
+                <h3 class="office-card__title">Torgallmenningen</h3>
+                <span class="office-card__address">Torgallmenningen 11, 5014 Bergen</span>
               </div>
-              <img src="../images/location-torgallmeningen.png" alt="" />
+              <img class="office-card__map" src="../images/location-torgallmeningen.png" alt="" />
             </address>
           </a>
-          <a href="https://maps.app.goo.gl/dDJQYxgZ7wJxiHJ98">
-            <address>
-              <div>
-                <h3>Lagunen</h3>
-                <span>Laguneveien 5, 5239 Bergen</span>
+          <a class="office-card" href="https://maps.app.goo.gl/dDJQYxgZ7wJxiHJ98">
+            <address class="office-card__content">
+              <div class="office-card__info">
+                <h3 class="office-card__title">Lagunen</h3>
+                <span class="office-card__address">Laguneveien 5, 5239 Bergen</span>
               </div>
-              <img src="../images/location-lagunen.png" alt="" />
+              <img class="office-card__map" src="../images/location-lagunen.png" alt="" />
             </address>
           </a>
-          <a href="https://maps.app.goo.gl/NN5rrK3VDr36X1pm7">
-            <address>
-              <div>
-                <h3>Åsane</h3>
-                <span>Åsane Senter 37, 5116 Bergen</span>
+          <a class="office-card" href="https://maps.app.goo.gl/NN5rrK3VDr36X1pm7">
+            <address class="office-card__content">
+              <div class="office-card__info">
+                <h3 class="office-card__title">Åsane</h3>
+                <span class="office-card__address">Åsane Senter 37, 5116 Bergen</span>
               </div>
-              <img src="../images/location-aasane.png" alt="" />
+              <img class="office-card__map" src="../images/location-aasane.png" alt="" />
             </address>
           </a>
         </div>
       </section>
-    </div>
+    </main>
     <span id="path-to-root">../</span>
     <script src="../scripts/header.js"></script>
     <script src="../scripts/footer.js"></script>

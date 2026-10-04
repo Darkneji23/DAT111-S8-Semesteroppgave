@@ -138,7 +138,7 @@ h1 {
 
 /* ===================== ABOUT BIB ===================== */
 
-.adresses-list {
+.office-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -146,12 +146,12 @@ h1 {
   align-items: left;
 }
 
-.adresses-list > a {
+.office-card {
   text-decoration: none;
   color: inherit;
 }
 
-.adresses-list > a > address {
+.office-card__content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -163,8 +163,12 @@ h1 {
   min-width: 500px;
   border-radius: 8px;
 }
-
-.adresses-list > a > address > img {
+.office-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.office-card__map {
   width: 150px;
   height: auto;
 }
