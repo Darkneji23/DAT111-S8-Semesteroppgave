@@ -454,8 +454,6 @@ h1 {
 .header__hamburger--open .header__hamburger-btn > div:nth-child(3) {
   transform: rotate(-45deg) translateY(-15px) translateX(15px);
 }
-
-/* Выпадающее меню и подложка */
 .header__overlay {
   position: fixed;
   display: none;
@@ -546,6 +544,36 @@ footer {
   }
 }
 
+@keyframes text-color {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* ===================== Media Queries ===================== */
 
 @media (max-width: 900px) {
@@ -556,6 +584,7 @@ footer {
 
 /* ===================== PERSONAL PAGES and PROFILES ===================== */
 
+/* =========== Teodor =========== */
 .teodor-title {
   min-height: 100vh;
   display: flex;
@@ -578,3 +607,87 @@ footer {
   color: var(--color-secondary);
   font-size: 250px;
 }
+/* =========== Bjorn =========== */
+.page-bjorn {
+  margin: 0;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+  padding-top: var(--header-height);
+  background-color: var(--color-background-primary);
+}
+
+.bjorn {
+  display: grid;
+  height: 40vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "item-1 item-2"
+    "item-1 item-3";
+}
+
+.bjorn__item {
+  box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 5px solid var(--color-primary);
+  border-radius: 20px;
+  background-color: var(--color-background-secondary);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bjorn__item:hover {
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(+5px);
+}
+
+.bjorn__item:nth-child(1) {
+  grid-area: item-1;
+}
+
+.bjorn__item:nth-child(2) {
+  grid-area: item-2;
+}
+
+.bjorn__item:nth-child(3) {
+  grid-area: item-3;
+}
+
+.bjorn__image-wrapper {
+  margin-top: 50px;
+}
+.bjorn__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  object-fit: cover;
+  padding: 0px;
+  animation: move 2s linear infinite;
+}
+
+.bjorn__image:hover {
+  animation-play-state: paused;
+}
+
+.bjorn__title--animated {
+  animation: text-color 2s infinite;
+}
+
+.bjorn__subtitle {
+  font-size: 64px; /* Задайте нужный размер (например, 24px, 28px или 32px) */
+  margin-top: 0;
+  padding: 32px;
+}
+/* =========== Simien =========== */
+
+/* =========== Dmytro =========== */
+
+/* =========== Setthawat =========== */
+
+/* =========== Eivind =========== */
