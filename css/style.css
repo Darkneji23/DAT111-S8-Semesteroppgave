@@ -593,6 +593,19 @@ footer {
 /* ===================== PERSONAL PAGES and PROFILES ===================== */
 
 /* =========== Teodor =========== */
+
+.teodor-text {
+  color: var(--color-primary);
+  transition:
+    color 0.2s,
+    font-size 1s;
+}
+
+.teodor-text:hover {
+  color: var(--color-secondary);
+  font-size: 250px;
+}
+
 .teodor-title {
   min-height: 25vh;
   display: flex;
