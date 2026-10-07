@@ -46,6 +46,7 @@ h1 {
   align-items: center;
   padding: 32px 0;
 }
+
 .page-content__section {
   width: 100%;
   max-width: 1080px;
@@ -54,10 +55,42 @@ h1 {
   align-items: flex-start;
   gap: 32px;
 }
+
 .section-heading {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.item {
+  box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 5px solid var(--color-primary);
+  border-radius: 20px;
+  background-color: var(--color-background-secondary);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.item:hover {
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(+5px);
+}
+
+.item > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.item > p {
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
 /* ===================== HOME PAGE (INDEX) ===================== */
@@ -338,6 +371,20 @@ h1 {
 
 .supplier-list a:hover {
   opacity: 0.75;
+}
+
+/* ===================== Konsultasjon ===================== */
+
+.time-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 5px solid var(--color-primary);
+  border-radius: 20px;
+  background-color: var(--color-background-primary);
+  margin: 10px;
 }
 
 /* ===================== HEADER ===================== */
