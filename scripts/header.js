@@ -77,6 +77,7 @@ headerContent.appendChild(hamburgerMenuContainer);
 
 const header = document.createElement("header");
 header.classList.add("header");
+header.classList.add("header");
 header.appendChild(headerContent);
 
 //Ads header to the body
