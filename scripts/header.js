@@ -3,10 +3,9 @@ let pathToRoot = document.getElementById("path-to-root")?.innerText ?? "./";
 //List of links shown directly on the header
 const headerLinks = [
   { href: "index.html", text: "Hjem" },
-  { href: "pages/om-bib.html", text: "Om-oss" },
-  { href: "pages/kontakt-oss.html", text: "Kontakt-oss" },
   { href: "pages/oppussing.html", text: "Oppussing" },
   { href: "pages/utvendig.html", text: "Utvendig" },
+  { href: "pages/riving.html", text: "Riving" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
 ];
 
@@ -17,6 +16,8 @@ const menuLinks = [
   { href: "pages/kontakt-oss.html", text: "Kontakt-oss" },
   { href: "pages/oppussing.html", text: "Oppussing" },
   { href: "pages/utvendig.html", text: "Utvendig" },
+  { href: "pages/riving.html", text: "Riving" },
+  { href: "pages/laan-og-utgifter.html", text: "Lån-og-utgifter" },
   { href: "pages/konsultasjon.html", text: "Konsultasjon" },
 ];
 

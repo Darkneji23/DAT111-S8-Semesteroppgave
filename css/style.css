@@ -159,18 +159,32 @@ h1 {
 
 .reviews {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 16px;
+  width: 100%;
+}
+
+.reviews-section {
+  width: calc(100% - 20px);
+  max-width: none;
+  align-items: stretch;
+  gap: 24px;
 }
 
 .review {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 200px;
-  border-radius: 8px;
-  padding: 8px;
-  border: solid black 1px;
+  flex: 1 1 280px;
+  min-width: 0;
+  gap: 16px;
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 16px;
+  background-color: var(--color-background-primary);
+}
+
+.review__text {
+  line-height: 1.6;
 }
 
 .review__author {
@@ -178,11 +192,18 @@ h1 {
   flex-direction: row;
   gap: 8px;
   align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .review__meta {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+}
+
+.review__name {
+  font-weight: 700;
 }
 
 .review__avatar {
@@ -190,7 +211,9 @@ h1 {
   height: 50px;
   object-fit: cover;
   border-radius: 25px;
+  flex: 0 0 50px;
 }
+
 
 /* ===================== ABOUT BIB ===================== */
 
@@ -711,6 +734,11 @@ footer {
     transform: translateY(-50%);
   }
 }
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 20px;
+  }
+}
 
 /* ===================== PERSONAL PAGES and PROFILES ===================== */
 
@@ -820,7 +848,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   border: 5px solid var(--color-primary);
-  border-radius: 20px;
+  border-radius: 0px;
   background-color: var(--color-background-secondary);
   transition:
     box-shadow 0.2s ease,
@@ -934,6 +962,7 @@ body.simien-page {
 .simien-page-content section h1 {
   height: fit-content;
   font-size: 200px;
+  background: radial-gradient(ellipse 50% 50% at center, white, white, transparent);
 }
 
 .simien-page-content section .simien-card {
