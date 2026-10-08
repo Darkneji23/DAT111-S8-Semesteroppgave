@@ -902,6 +902,31 @@ body.simien-page {
   width: 100%;
 }
 
+.simien-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--color-primary);
+}
+
+.simien-table th,
+.simien-table td {
+  padding: 6px 16px;
+  text-align: left;
+}
+
+.simien-table th {
+  background-color: var(--color-primary);
+}
+
+.simien-table tbody tr:nth-child(even) {
+  background-color: var(--color-secondary);
+}
+
+.simien-table td:first-child {
+  width: 160px;
+  font-weight: 700;
+}
+
 #simien-btn-previous-slide,
 #simien-btn-next-slide {
   position: absolute;
