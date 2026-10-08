@@ -93,6 +93,31 @@ h1 {
   line-height: 1.6;
 }
 
+.subpage__hero {
+  position: relative;
+  z-index: -1000;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subpage__hero__bgimage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.subpage__hero__title {
+  z-index: 2;
+  width: 80%;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
 /* ===================== HOME PAGE (INDEX) ===================== */
 
 .hero {
@@ -347,7 +372,7 @@ h1 {
 
 .info-list strong {
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 .supplier-list {
