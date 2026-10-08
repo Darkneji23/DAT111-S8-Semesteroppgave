@@ -69,24 +69,32 @@
               <span class="dmytro-card__spec-value">Bergen, Norway</span>
             </div>
             <div class="dmytro-card__spec-item">
+              <span class="dmytro-card__spec-label">Focus:</span>
+              <span class="dmytro-card__spec-value">Software Arch & Web Dev</span>
+            </div>
+            <div class="dmytro-card__spec-item">
               <span class="dmytro-card__spec-label">Origin:</span>
               <span class="dmytro-card__spec-value">Mykolaiv, Ukraine</span>
+            </div>
+            <div class="dmytro-card__spec-item">
+              <span class="dmytro-card__spec-label">Interests:</span>
+              <span class="dmytro-card__spec-value">Software, Startups, Investing</span>
             </div>
             <div class="dmytro-card__spec-item">
               <span class="dmytro-card__spec-label">Languages:</span>
               <span class="dmytro-card__spec-value">Ukrainian, Russian, English, Norwegian</span>
             </div>
             <div class="dmytro-card__spec-item">
+              <span class="dmytro-card__spec-label">Height / Weight:</span>
+              <span class="dmytro-card__spec-value">191 cm, 81 kg</span>
+            </div>
+            <div class="dmytro-card__spec-item">
               <span class="dmytro-card__spec-label">Education:</span>
               <span class="dmytro-card__spec-value">HVL (Informasjonsteknologi, 1st Year)</span>
             </div>
             <div class="dmytro-card__spec-item">
-              <span class="dmytro-card__spec-label">Focus:</span>
-              <span class="dmytro-card__spec-value">Software Arch & Web Dev</span>
-            </div>
-            <div class="dmytro-card__spec-item">
-              <span class="dmytro-card__spec-label">Physical:</span>
-              <span class="dmytro-card__spec-value">191 cm / 81 kg</span>
+              <span class="dmytro-card__spec-label">Birthday / Age:</span>
+              <span class="dmytro-card__spec-value">April 27, 2006, 20 years old</span>
             </div>
           </div>
           <div class="dmytro-card__tags">
@@ -112,11 +120,9 @@
           <div class="dmytro-terminal__title">dmytro@developer-desk:~</div>
         </div>
         <div class="dmytro-terminal__body">
-          <div class="dmytro-terminal__output" id="terminal-output">
-            <p class="dmytro-terminal__text">
-              > System initialized. Select a command below or type manually:
-            </p>
-          </div>
+          <p class="dmytro-terminal__text">
+            System initialized. Select a command below or type manually:
+          </p>
           <div class="dmytro-terminal__actions">
             <button class="dmytro-terminal__chip" type="button" onclick="runCommand('about-me')">
               About me
@@ -134,6 +140,7 @@
               Clear
             </button>
           </div>
+          <div class="dmytro-terminal__output" id="terminal-output"></div>
           <div class="dmytro-terminal__input-line">
             <span class="dmytro-terminal__prompt">cmd:~$</span>
             <input
@@ -148,5 +155,6 @@
     </main>
 
     <span id="path-to-root">../../</span>
+    <script src="../../scripts/dmytro.js"></script>
   </body>
 </html>
