@@ -675,7 +675,6 @@ footer {
   place-items: center;
   width: 120px;
   height: 60px;
-  background-color: red;
 }
 
 .teodor-bil:hover {
@@ -683,30 +682,36 @@ footer {
   animation-duration: 4s;
 }
 
-/* =========== Bjorn =========== */
+#fredrik {
+      display: none;
+    }
 
-.page-bjorn {
-  margin: 0;
-  padding: 20px 30px;
-  font-family: Arial, sans-serif;
-  padding-top: var(--header-height);
-  background-color: var(--color-background-primary);
+@keyframes teodorKjore {
+  from{
+    left: 0px;
+  }
+  to{
+    left: 100%;
+  }
 }
 
-.bjorn {
-  display: grid;
-  height: 40vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-  grid-template-areas:
-    "item-1 item-2"
-    "item-1 item-3";
+.hero-teodor {
+  position: relative;
+  z-index: -1000;
+  background-image: url("../images/cars.jpeg");
+  background-size: cover;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bjorn__item {
-  box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.hero {
+  position: relative;
+  z-index: -1000;
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  height: calc(100vh - var(--header-height));
   display: flex;
   flex-direction: column;
   align-items: center;
