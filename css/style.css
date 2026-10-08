@@ -1,7 +1,7 @@
 /* ===================== VARIABLES and RESET ===================== */
 
 :root {
-  --color-primary: #c09cd8;
+  --color-primary: #c09bd8;
   --color-secondary: #e6e4ce;
   --color-background-primary: #ede3e9;
   --color-background-secondary: #9f84bd;
@@ -54,16 +54,6 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-}
-
-.page-content__section--wide {
-  width: fit-content;
-  max-width: calc(100% - 32px);
-  align-items: stretch;
-}
-
-.page-content__section--wide > .content-block {
-  text-align: center;
 }
 
 .section-heading {
@@ -126,7 +116,6 @@ h1 {
   width: 80%;
   color: var(--color-text-secondary);
   text-align: center;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* ===================== HOME PAGE (INDEX) ===================== */
@@ -224,7 +213,6 @@ h1 {
   border-radius: 25px;
   flex: 0 0 50px;
 }
-
 
 /* ===================== ABOUT BIB ===================== */
 
@@ -422,6 +410,7 @@ h1 {
 }
 
 .supplier-list a {
+  color: var(--color-primary);
   font-weight: 600;
   text-decoration: underline;
   transition: opacity 0.2s ease;
@@ -796,14 +785,14 @@ footer {
 }
 
 #fredrik {
-      display: none;
-    }
+  display: none;
+}
 
 @keyframes teodorKjore {
-  from{
+  from {
     left: 0px;
   }
-  to{
+  to {
     left: 100%;
   }
 }
@@ -1435,6 +1424,7 @@ main.dmytro-container {
     width: 70%;
   }
 }
+/* =========== Setthawat =========== *
 /* =========== Setthawat =========== */
 .setthaBody {
   background-color: lightskyblue;
@@ -1443,13 +1433,22 @@ main.dmytro-container {
   overflow-x: scroll;
   grid-area: info;
   padding-left: 40px;
-
-
 }
 
 .setthaH1 {
-
-  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, darkblue, paleturquoise, rosybrown);
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3,
+    darkblue,
+    paleturquoise,
+    rosybrown
+  );
 
   background-size: 200% auto;
 
@@ -1466,12 +1465,15 @@ main.dmytro-container {
 }
 
 @keyframes regnbueFlyt {
-  0% {background-position: 0% center;}
-  100% {background-position: 200% center;}
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
-
-.setthaH2{
+.setthaH2 {
   font-size: 30px;
   color: black;
   margin-top: 50px;
@@ -1481,14 +1483,9 @@ main.dmytro-container {
   font-size: 20px;
   color: black;
   max-width: 800px;
-
 }
 
-
-
-
 .setthaH3 {
-
   background: linear-gradient(to right, yellow, red, darkred, orangered, orange);
 
   background-size: 200% auto;
@@ -1534,14 +1531,12 @@ main.dmytro-container {
   font-size: 14px;
 }
 
-
 .settha-tabell th {
   text-align: left;
   padding: 10px;
   border-bottom: 2px solid #000000;
   font-weight: bold;
 }
-
 
 .settha-tabell td {
   padding: 10px;
