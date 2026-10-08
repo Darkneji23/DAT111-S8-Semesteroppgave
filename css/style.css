@@ -56,6 +56,16 @@ h1 {
   gap: 32px;
 }
 
+.page-content__section--wide {
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  align-items: stretch;
+}
+
+.page-content__section--wide > .content-block {
+  text-align: center;
+}
+
 .section-heading {
   display: flex;
   flex-direction: column;
@@ -411,7 +421,6 @@ h1 {
 }
 
 .supplier-list a {
-  color: var(--color-primary);
   font-weight: 600;
   text-decoration: underline;
   transition: opacity 0.2s ease;
