@@ -868,11 +868,12 @@ footer {
   display: grid;
   height: 40vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   grid-template-areas:
     "item-1 item-2"
-    "item-1 item-3";
+    "item-1 item-3"
+    "item-4 item-5";
 }
 
 .bjorn__item {
@@ -907,6 +908,14 @@ footer {
   grid-area: item-3;
 }
 
+.bjorn__item:nth-child(4) {
+  grid-area: item-4;
+}
+
+.bjorn__item:nth-child(5) {
+  grid-area: item-5;
+}
+
 .bjorn__image-wrapper {
   margin-top: 50px;
 }
@@ -931,6 +940,20 @@ footer {
   font-size: 64px; /* Задайте нужный размер (например, 24px, 28px или 32px) */
   margin-top: 0;
   padding: 32px;
+}
+
+.bjorn__bee-movie {
+  overflow:auto;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.bjorn__bee-movie .gist * {
+  width: 100%;
+  background: transparent !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
 }
 
 /* =========== Simien =========== */
