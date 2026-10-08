@@ -375,6 +375,11 @@ h1 {
 
 /* ===================== Konsultasjon ===================== */
 
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .time-card {
   padding: 20px;
   display: flex;
@@ -385,6 +390,51 @@ h1 {
   border-radius: 20px;
   background-color: var(--color-background-primary);
   margin: 10px;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "navn telefon"
+    "e-post tema"
+    "dato melding"
+    "tidspunkt melding"
+    "submit submit";
+  width: 100%;
+}
+
+.form-group-navn {
+  grid-area: navn;
+}
+
+.form-group-telefon {
+  grid-area: telefon;
+}
+
+.form-group-e-post {
+  grid-area: e-post;
+}
+
+.form-group-tema {
+  grid-area: tema;
+}
+
+.form-group-dato {
+  grid-area: dato;
+}
+
+.form-group-tidspunkt {
+  grid-area: tidspunkt;
+}
+
+.form-group-melding {
+  grid-area: melding;
+}
+
+.form-group-submit {
+  grid-area: submit;
 }
 
 /* ===================== HEADER ===================== */
