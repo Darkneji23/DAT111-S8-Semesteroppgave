@@ -16,11 +16,55 @@
     <div class="teodor-title">
       <h2 class="teodor-undertekst">Roosevelts reinkarnasjon fra Bergen</h2>
     </div>
-    <div class="container">
-        <h2>Dette er litt info om Teodor</h2>
-        <p>BLABLABLA</p>
+    <div class="item">
+        <h2>Hei og velkommen til min side!</h2>
+        <div id="ommegtekst">
+                <p>
+                    Info om meg<br>
+                    Hei! Jeg heter Teodor Haugland, fulltidsstudent ved HVL på dataingeniør. Født og oppvokst i Bergen av sørlandsforeldre. Jeg bor i Åsane med min kone Olivia Konstanse Haugland fra Namsos, som jeg møtte på videregående i Os (Hasjtag mister worldwide). Hobbyer inkluderer: frisbeegolf, klatring, gitar, gaming, instagram reels, lage mat, spise mat, lage mer mat, og så spise det opp igjen. 
+                </p>
+                <br>
+                <p>
+                    Hvorfor valgte jeg dataingeniør?<br>
+                    Til tross for at jeg valgte en videregående skole som ikke tilbyr andre programfag enn musikkfag, visste jeg at jeg ville jobbe med noe sånt (noe nerdete). Etter videregående tok jeg derfor realfagene som var nødvendig og siktet meg inn mot dataingeniør. Jeg ser for meg at arbeidet som en programutvikler eller lignende kan være en kul hverdag! Få et problem, lære det som trengs, jobbe med andre for å løse det, og repeat! Til nå har studiet levd opp til forventningene! 
+                </p>
+                <br>
+                <p>
+                    Hva har jeg lært fra prosjektet?<br>
+                    Jeg har fått innblikk i hvordan man jobber som gruppe med prosjektmetodikk, scrum, kanban, logg, github osv… Jeg har også fått en innføring i Webdesign, og føler meg trygg på at jeg kunne lagd en nettside fra bunnen av selv, om enn den ikke hadde vært så god. Og CSS har vært veldig gøy! Jeg har vært heldig med gruppen min, hvor jeg har fått folk som er samarbeidsvillige og møter opp.
+                </p>
+        </div>
+        <button id="bytt-tekst" class="teodor-knapp">Bytt til nynorsk</button>
     </div>
 
+    <div>
+        <table class="price-table">
+            <thead>
+              <tr>
+                <th>Språk</th>
+                <th>Beherskelse</th>
+                <th>Kommentar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Java</td>
+                <td>Middels</td>
+                <td>Sven Olai backer</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Middels</td>
+                <td>God i matte, dårlig i annet</td>
+              </tr>
+              <tr>
+                <td>Spansk</td>
+                <td>Middels/Lav</td>
+                <td>#Feliz navidad</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 
 
 
@@ -35,12 +79,21 @@
 
     <script src="../../scripts/header.js"></script>
     <script>
-    setTimeout(function () {
-      document.getElementById("fredrik").style.display = "block";
-    }, 15000);
-    setTimeout(function () {
-      document.getElementById("fredrik").style.display = "none";
-    }, 16000);
+        setTimeout(function () {
+        document.getElementById("fredrik").style.display = "block";
+        }, 15000);
+        setTimeout(function () {
+        document.getElementById("fredrik").style.display = "none";
+        }, 16000);
+        const tekst = document.getElementById("ommegtekst");
+        const knapp = document.getElementById("bytt-tekst");
+
+        const original = "NYNORSKBRUKERE FÅR IKKE LÆRE OM MEG";
+        const alternativ = "NYNORSKBRUKERE FÅR IKKE LÆRE OM MEG";
+
+        knapp.addEventListener("click", function () {
+        tekst.textContent = (tekst.textContent === original) ? alternativ : original;
+        });
     </script>
 
     
