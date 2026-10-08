@@ -854,6 +854,42 @@ footer {
     transform 0.2s ease;
 }
 
+/* =========== Bjorn =========== */
+
+.page-bjorn {
+  margin: 0;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+  padding-top: var(--header-height);
+  background-color: var(--color-background-primary);
+}
+
+.bjorn {
+  display: grid;
+  height: 40vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "item-1 item-2"
+    "item-1 item-3";
+}
+
+.bjorn__item {
+  box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 5px solid var(--color-primary);
+  border-radius: 20px;
+  background-color: var(--color-background-secondary);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
 .bjorn__item:hover {
   box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
   transform: translateY(+5px);
