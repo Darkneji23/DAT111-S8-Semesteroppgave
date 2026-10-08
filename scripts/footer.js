@@ -16,14 +16,20 @@ function AddFooterToDOM() {
       links: [
         { href: "pages/oppussing.html", text: "Oppussing" },
         { href: "pages/utvendig.html", text: "Utvendig" },
+        { href: "pages/riving.html", text: "Riving" },
+        { href: "pages/laan-og-utgifter.html", text: "Lån og utgifter" },
         { href: "pages/konsultasjon.html", text: "Konsultasjon" },
       ],
     },
     {
-      title: "lovlig",
+      title: "Våre ansatte",
       links: [
-        { href: "", text: "Personversnerklering" },
-        { href: "", text: "Informasjonskapsler" },
+        { href: "pages/kontakter/bjorn.html", text: "Bjørn" },
+        { href: "pages/kontakter/dmytro.html", text: "Dmytro" },
+        { href: "pages/kontakter/eivind.html", text: "Eivind" },
+        { href: "pages/kontakter/setthawat.html", text: "Setthawat" },
+        { href: "pages/kontakter/simien.html", text: "Simien" },
+        { href: "pages/kontakter/teodor.html", text: "Teodor" },
       ],
     },
   ];
