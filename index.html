@@ -1,74 +1,80 @@
 <!doctype html>
 <html lang="nb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bolig i Bergen</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <section class="hero">
-      <h1 class="hero__title">
-        <img class="hero__logo" src="images/logo.png" alt="Bolig i Bergen" />
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bolig i Bergen</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="hero">
+    <h1 class="hero__title">
+      <img class="hero__logo" src="images/logo.png" alt="Bolig i Bergen" />
+    </h1>
+  </section>
+
+  <main class="page-content">
+    <section class="item">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Om Oss</h2>
+        <p class="section-heading__text">
+          BIB er et lokalt håndverkerfirma i Bergen med over 15 års erfaring innen oppussing og vedlikehold av boliger.
+          Våre fagfolk tar seg av bad, kjøkken, elektro og utvendig vedlikehold, med høy kvalitet og levering til avtalt
+          tid.
+          <a class="section-heading__link" href="./pages/om-bib.html">Les mer</a>
+        </p>
+      </div>
     </section>
 
-    <main class="page-content">
-      <section class="item">
-        <div class="section-heading">
-          <h2 class="section-heading__title">Om Oss</h2>
-          <p class="section-heading__text">
-            BIB er et lokalt håndverkerfirma i Bergen med over 15 års erfaring innen oppussing og vedlikehold av boliger. Våre fagfolk tar seg av bad, kjøkken, elektro og utvendig vedlikehold, med høy kvalitet og levering til avtalt tid.
-            <a class="section-heading__link" href="./pages/om-bib.html">Les mer</a>
-          </p>
-        </div>
-      </section>
+    <section class="page-content__section reviews-section item">
+      <div class="section-heading">
+        <h2 class="section-heading__title">Hvorfor BIB?</h2>
+        <p class="section-heading__text">Ikke hør på oss, hør på fornøyde kunder</p>
+      </div>
 
-      <section class="page-content__section reviews-section item">
-        <div class="section-heading">
-          <h2 class="section-heading__title">Hvorfor BIB?</h2>
-          <p class="section-heading__text">Ikke hør på oss, hør på fornøyde kunder</p>
-        </div>
-
-        <div class="reviews">
-          <article class="review">
-            <p class="review__text">"Figma Balls"</p>
-            <div class="review__author">
-              <img class="review__avatar" src="./images/bob.jpeg" alt="Bob" />
-              <div class="review__meta">
-                <span class="review__name">Bob</span>
-                <span class="review__rating">⭐⭐⭐⭐⭐</span>
-              </div>
+      <div class="reviews">
+        <div class="review">
+          <p class="review__text">"Figma Balls"</p>
+          <div class="review__author">
+            <img class="review__avatar" src="./images/bob.jpeg" alt="Bob" />
+            <div class="review__meta">
+              <span class="review__name">Bob</span>
+              <span class="review__rating">⭐⭐⭐⭐⭐</span>
             </div>
-          </article>
-
-          <article class="review">
-            <p class="review__text">"Figma Balls 2"</p>
-            <div class="review__author">
-              <img class="review__avatar" src="./images/julieta.jpeg" alt="Julieta" />
-              <div class="review__meta">
-                <span class="review__name">Julieta</span>
-                <span class="review__rating">⭐⭐⭐⭐⭐</span>
-              </div>
-            </div>
-          </article>
-                <article class="review">
-            <p class="review__text">"Jeg har blitt kidnappet av denne gruppen. de har holdt meg fast i kjelleren (spesefikt åp det finere kontoret som ligger på lagunen) i flere måneder eller kanskje år jeg husker ikke sist gang jeg så noen jeg elsker eller bryr meg for vær så snill send hjelp umiddelbart"</p>
-            <div class="review__author">
-              <img class="review__avatar" src="./images/reviewer-ravn.png" alt="Ravn" />
-              <div class="review__meta">
-                <span class="review__name">Ravn</span>
-                <span class="review__rating">⭐⭐⭐⭐⭐</span>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
-      </section>
-    </main>
 
-    <script src="scripts/header.js"></script>
-    <script src="scripts/footer.js"></script>
-  </body>
+        <div class="review">
+          <p class="review__text">"Figma Balls 2"</p>
+          <div class="review__author">
+            <img class="review__avatar" src="./images/julieta.jpeg" alt="Julieta" />
+            <div class="review__meta">
+              <span class="review__name">Julieta</span>
+              <span class="review__rating">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <p class="review__text">"Jeg har blitt kidnappet av denne gruppen. de har holdt meg fast i kjelleren
+            (spesefikt åp det finere kontoret som ligger på lagunen) i flere måneder eller kanskje år jeg husker ikke
+            sist gang jeg så noen jeg elsker eller bryr meg for vær så snill send hjelp umiddelbart"</p>
+          <div class="review__author">
+            <img class="review__avatar" src="./images/reviewer-ravn.png" alt="Ravn" />
+            <div class="review__meta">
+              <span class="review__name">Ravn</span>
+              <span class="review__rating">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/header.js"></script>
+  <script src="scripts/footer.js"></script>
+</body>
+
 </html>
