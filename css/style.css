@@ -934,6 +934,7 @@ body.simien-page {
 .simien-page-content section h1 {
   height: fit-content;
   font-size: 200px;
+  background: radial-gradient(ellipse 50% 50% at center, white, white, transparent);
 }
 
 .simien-page-content section .simien-card {
