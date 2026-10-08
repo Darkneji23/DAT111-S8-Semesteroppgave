@@ -270,13 +270,16 @@ header .hamburger-menu .menu ul a {
   place-items: center;
   width: 120px;
   height: 60px;
-  background-color: red;
 }
 
 .teodor-bil:hover {
   animation-name: teodorKjore;
   animation-duration: 4s;
 }
+
+#fredrik {
+      display: none;
+    }
 
 @keyframes teodorKjore {
   from{
@@ -285,6 +288,17 @@ header .hamburger-menu .menu ul a {
   to{
     left: 100%;
   }
+}
+
+.hero-teodor {
+  position: relative;
+  z-index: -1000;
+  background-image: url("../images/cars.jpeg");
+  background-size: cover;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
