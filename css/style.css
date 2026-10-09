@@ -83,12 +83,12 @@ h1 {
   transform: translateY(+5px);
 }
 
-.item>h2 {
+.item > h2 {
   font-size: 1.5rem;
   margin-bottom: 16px;
 }
 
-.item>p {
+.item > p {
   margin-bottom: 16px;
   line-height: 1.6;
 }
@@ -536,7 +536,7 @@ h1 {
   height: 100%;
 }
 
-.header__nav>a {
+.header__nav > a {
   color: var(--color-text-secondary);
   text-decoration: underline;
   height: 100%;
@@ -548,7 +548,7 @@ h1 {
   font-size: 20px;
 }
 
-.header__nav>a:hover {
+.header__nav > a:hover {
   background-color: var(--color-primary);
 }
 
@@ -569,7 +569,7 @@ h1 {
   cursor: pointer;
 }
 
-.header__hamburger-btn>div {
+.header__hamburger-btn > div {
   width: 60px;
   height: 5px;
   border-radius: 5px;
@@ -580,32 +580,32 @@ h1 {
     border-color 0.15s ease-in-out;
 }
 
-.header__hamburger-btn>div:nth-child(1) {
+.header__hamburger-btn > div:nth-child(1) {
   background-color: #f29f1f;
 }
 
-.header__hamburger-btn>div:nth-child(2) {
+.header__hamburger-btn > div:nth-child(2) {
   background-color: #1eac4a;
   height: 15px;
   border-top: 5px solid #cf3537;
   border-bottom: 5px solid #b26531;
 }
 
-.header__hamburger-btn>div:nth-child(3) {
+.header__hamburger-btn > div:nth-child(3) {
   background-color: #f29f1f;
 }
 
 /* Анимация и превращение крестика при открытии */
-.header__hamburger--open .header__hamburger-btn>div:nth-child(1) {
+.header__hamburger--open .header__hamburger-btn > div:nth-child(1) {
   transform: rotate(45deg) translateY(15px) translateX(15px);
 }
 
-.header__hamburger--open .header__hamburger-btn>div:nth-child(2) {
+.header__hamburger--open .header__hamburger-btn > div:nth-child(2) {
   background-color: transparent;
   border-color: transparent;
 }
 
-.header__hamburger--open .header__hamburger-btn>div:nth-child(3) {
+.header__hamburger--open .header__hamburger-btn > div:nth-child(3) {
   transform: rotate(-45deg) translateY(-15px) translateX(15px);
 }
 
@@ -783,7 +783,7 @@ footer {
   align-items: center;
 }
 
-.teodor-title>h1 {
+.teodor-title > h1 {
   font-size: 200px;
   margin-top: 50px;
 }
@@ -1062,7 +1062,7 @@ body.simien-page {
   gap: 16px;
 }
 
-.simien-page-content section .simien-card>ul {
+.simien-page-content section .simien-card > ul {
   width: 100%;
 }
 
@@ -1115,7 +1115,7 @@ body.simien-page {
   top: 8px;
 }
 
-#simien-btn-previous-slide>svg {
+#simien-btn-previous-slide > svg {
   transform: rotate(-90deg);
 }
 
@@ -1128,7 +1128,7 @@ body.simien-page {
   bottom: 8px;
 }
 
-#simien-btn-next-slide>svg {
+#simien-btn-next-slide > svg {
   transform: rotate(90deg);
 }
 
@@ -1174,8 +1174,7 @@ body.dmytro-page button {
   padding-top: 0;
   background-color: var(--bg-page);
   background-image:
-    radial-gradient(circle at 50% 30%, rgba(0, 180, 216, 0.15) 0%, transparent 65%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 50% 30%, rgba(0, 180, 216, 0.15) 0%, transparent 65%), linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size:
     100% 100%,
@@ -1342,7 +1341,7 @@ main.dmytro-container {
   border-radius: 8px;
 }
 
-.dmytro-card__spec-item {
+.dmytro-card__specs > div {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1367,7 +1366,7 @@ main.dmytro-container {
   margin-top: 4px;
 }
 
-.dmytro-card__tag {
+.dmytro-card__tags > span {
   background-color: var(--bg-header);
   border: 1px solid var(--border-card);
   color: var(--accent-cyan);
@@ -1379,7 +1378,7 @@ main.dmytro-container {
   user-select: none;
 }
 
-.dmytro-card__tag:hover {
+.dmytro-card__tags > span:hover {
   border-color: var(--accent-cyan);
   box-shadow: 0 0 12px rgba(0, 245, 212, 0.25);
   color: #ffffff;
@@ -1448,6 +1447,7 @@ main.dmytro-container {
 }
 
 .dmytro-terminal__output {
+  white-space: pre-wrap;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1575,17 +1575,7 @@ main.dmytro-container {
 }
 
 .setthaH1 {
-  background: linear-gradient(to right,
-      #ff0000,
-      #ff7f00,
-      #ffff00,
-      #00ff00,
-      #0000ff,
-      #4b0082,
-      #9400d3,
-      darkblue,
-      paleturquoise,
-      rosybrown);
+  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, darkblue, paleturquoise, rosybrown);
 
   background-size: 200% auto;
 

@@ -10,10 +10,7 @@
   <body class="dmytro-page">
     <header class="dmytro-header">
       <a href="../../index.html" class="dmytro-header__logo-link">
-        <img
-          src="../../images/logo-light.png"
-          alt="Bolig i Bergen AS"
-          class="dmytro-header__logo" />
+        <img src="../../images/logo-light.png" alt="Bolig i Bergen AS" class="dmytro-header__logo" />
       </a>
       <nav class="dmytro-header__nav">
         <ul class="dmytro-header__menu">
@@ -42,10 +39,7 @@
       <section class="dmytro-hero">
         <article class="dmytro-card dmytro-card--profile">
           <div class="dmytro-card__avatar-wrapper">
-            <img
-              src="../../images/dmytro/dmytro.jpg"
-              alt="Dmytro Homon"
-              class="dmytro-card__avatar" />
+            <img src="../../images/dmytro/dmytro.jpg" alt="Dmytro Homon" class="dmytro-card__avatar" />
           </div>
           <div class="dmytro-card__status">
             <span class="dmytro-card__status-dot"></span>
@@ -57,56 +51,54 @@
           <p class="dmytro-card__subtitle">// Information Technology Student @ HVL</p>
 
           <p class="dmytro-card__description">
-            First-year Information Technology student at Western Norway University of Applied
-            Sciences (HVL) in Bergen. Living in Norway for three years, having adapted through six
-            different educational institutions. Thriving in collaborative environments, with a
-            strong focus on team dynamics, open communication, and building impactful software
-            together
+            First-year Information Technology student at Western Norway University of Applied Sciences (HVL) in Bergen. Living in Norway for three
+            years, having adapted through six different educational institutions. Thriving in collaborative environments, with a strong focus on team
+            dynamics, open communication, and building impactful software together
           </p>
           <div class="dmytro-card__specs">
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Location:</span>
               <span class="dmytro-card__spec-value">Bergen, Norway</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Focus:</span>
               <span class="dmytro-card__spec-value">Software Arch & Web Dev</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Origin:</span>
               <span class="dmytro-card__spec-value">Mykolaiv, Ukraine</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Interests:</span>
               <span class="dmytro-card__spec-value">Software, Startups, Investing</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Languages:</span>
               <span class="dmytro-card__spec-value">Ukrainian, Russian, English, Norwegian</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Height / Weight:</span>
               <span class="dmytro-card__spec-value">191 cm, 81 kg</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Education:</span>
               <span class="dmytro-card__spec-value">HVL (Informasjonsteknologi, 1st Year)</span>
             </div>
-            <div class="dmytro-card__spec-item">
+            <div>
               <span class="dmytro-card__spec-label">Birthday / Age:</span>
               <span class="dmytro-card__spec-value">April 27, 2006, 20 years old</span>
             </div>
           </div>
           <div class="dmytro-card__tags">
-            <span class="dmytro-card__tag">JavaScript</span>
-            <span class="dmytro-card__tag">TypeScript</span>
-            <span class="dmytro-card__tag">HTML5 / CSS3</span>
-            <span class="dmytro-card__tag">SCSS (BEM)</span>
-            <span class="dmytro-card__tag">Databases</span>
-            <span class="dmytro-card__tag">Software Architecture</span>
-            <span class="dmytro-card__tag">Business</span>
-            <span class="dmytro-card__tag">Investments</span>
-            <span class="dmytro-card__tag">Gym-bro</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>HTML5 / CSS3</span>
+            <span>SCSS (BEM)</span>
+            <span>Databases</span>
+            <span>Software Architecture</span>
+            <span>Business</span>
+            <span>Investments</span>
+            <span>Gym-bro</span>
           </div>
         </article>
       </section>
@@ -120,35 +112,18 @@
           <div class="dmytro-terminal__title">dmytro@developer-desk:~</div>
         </div>
         <div class="dmytro-terminal__body">
-          <p class="dmytro-terminal__text">
-            System initialized. Select a command below or type manually:
-          </p>
+          <p class="dmytro-terminal__text">System initialized. Select a command below or type manually:</p>
           <div class="dmytro-terminal__actions">
-            <button class="dmytro-terminal__chip" type="button" onclick="runCommand('about-me')">
-              About me
-            </button>
-            <button
-              class="dmytro-terminal__chip"
-              type="button"
-              onclick="runCommand('about-the-project')">
-              About the project
-            </button>
-            <button
-              class="dmytro-terminal__chip dmytro-terminal__chip--clear"
-              type="button"
-              onclick="runCommand('clear')">
-              Clear
-            </button>
+            <button class="dmytro-terminal__chip" type="button" onclick="runCommand('about-me')">About me</button>
+            <button class="dmytro-terminal__chip" type="button" onclick="runCommand('about-the-project')">About the project</button>
+            <button class="dmytro-terminal__chip" type="button" onclick="runCommand('contact-me')">Contact me</button>
+            <button class="dmytro-terminal__chip" onclick="runCommand('sudo')">sudo</button>
+            <button class="dmytro-terminal__chip dmytro-terminal__chip--clear" type="button" onclick="runCommand('clear')">Clear</button>
           </div>
           <div class="dmytro-terminal__output" id="terminal-output"></div>
           <div class="dmytro-terminal__input-line">
             <span class="dmytro-terminal__prompt">cmd:~$</span>
-            <input
-              type="text"
-              class="dmytro-terminal__input"
-              id="terminal-input"
-              placeholder="Type command..."
-              autofocus />
+            <input type="text" class="dmytro-terminal__input" id="terminal-input" placeholder="Type command..." autofocus />
           </div>
         </div>
       </section>
